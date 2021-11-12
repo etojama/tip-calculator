@@ -7,6 +7,7 @@ const liFive = document.querySelector("#li5");
 const people = document.querySelector("#people");
 const amount = document.querySelector("#amount");
 const total = document.querySelector("#total-value");
+const btn = document.querySelector("button");
 
 const results = function (percent) {
   let tip = (number.value * percent.value) / 100;
@@ -14,7 +15,21 @@ const results = function (percent) {
   let tots = +number.value + +calc.toFixed(2);
   amount.textContent = `$${calc}.00`;
   total.textContent = `$${tots}.00`;
+
+  // clear flelds
+  number.value = "";
+  people.value = "";
+
+  btn.style.backgroundColor = "cyan";
 };
+
+// reset after each calculation
+btn.addEventListener("click", () => {
+  amount.textContent = "$0.00";
+  total.textContent = "$0.00";
+
+  btn.style.backgroundColor = "hsl(184, 14%, 56%)";
+});
 
 liOne.addEventListener("click", () => {
   results(liOne);

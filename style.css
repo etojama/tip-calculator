@@ -127,13 +127,13 @@ body {
     width: 85%;
     height: 40%;
     border-radius: 10px;
-    padding: 1.2rem;
+    padding: 1rem 0.8rem;
     margin: 1rem 0;
     font-size: small;
   }
 
   .container .results button {
-    margin-top: 0.5rem;
+    margin-top: 1.2rem;
     padding: 0.4rem;
   }
 
@@ -153,5 +153,10 @@ body {
 
   .container .calc-area .nums {
     margin-bottom: 1rem;
+  }
+
+  #amount,
+  #total-value {
+    font-size: 1rem;
   }
 }
