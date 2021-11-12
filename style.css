@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: 1px solid rgb(177, 176, 176);
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.container {
+  background-color: #fff;
+  margin: 6rem auto;
+  width: 700px;
+  height: 340px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container .results {
+  background: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+  width: 50%;
+  height: 75%;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/* .container .results .result-container {
+  display: flex;
+} */
+
+.container .results .tip,
+.container .results .total {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+/* .container .calc-area .nums {
+} */
+
+.container .calc-area .nums ul {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 10px;
+  text-align: center;
+  margin: 0.4rem 0;
+}
+
+.container .calc-area p {
+  margin-top: 1rem;
+}
+.container .calc-area .nums ul li {
+  padding: 0.3rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+.container .calc-area .nums ul li a {
+  color: hsl(172, 67%, 45%);
+}
+
+.container .calc-area .nums {
+  margin-bottom: 2rem;
+}
+
+.container .calc-area #number {
+  height: 30px;
+}
+
+.container .results button {
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  color: hsl(186, 14%, 43%);
+  background: hsl(184, 14%, 56%);
+}
+
+@media (max-width: 600px) {
+  input {
+    padding: 0.6rem;
+    width: 100%;
+  }
+
+  #main-header {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 500px;
+    margin: 1rem auto -1rem auto;
+  }
+
+  .container .results {
+    width: 85%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    font-size: small;
+  }
+
+  .container .results button {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  .container .calc-area {
+    padding: 2rem 0;
+    width: 85%;
+  }
+
+  .container .calc-area .nums ul {
+    gap: 7px;
+    margin: 0.4rem 0;
+  }
+
+  .container .calc-area p {
+    margin-top: 0.5rem;
+  }
+
+  .container .calc-area .nums {
+    margin-bottom: 1rem;
+  }
+}
